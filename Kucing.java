@@ -1,10 +1,10 @@
 public class Kucing {
-	int size;
-	String breed;
-	String Name;
-	String bahasa;
+	private int size;
+	private String breed;
+	private String Name;
+	public String bahasa;
 	
-	void meow(int jumlah) {
+	public void meow(int jumlah) {
 		while (jumlah > 0) {
 			if (size >20) {
 				System.out.println("Meooow! Meooow!");
@@ -17,13 +17,17 @@ public class Kucing {
 		}
 	}
 	
-	void setSize(int nm){
+	public void setSize(int nm){
 		if (nm > 5) {
 			size = nm;
 		}
 	}
 	
-	String bicara() {
+	public int getSize(){
+		return size;
+	}
+	
+	public String bicara() {
 	return "Bahasa Kucing";
 	}
 }
