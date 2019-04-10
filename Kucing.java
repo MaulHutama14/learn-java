@@ -17,6 +17,12 @@ public class Kucing {
 		}
 	}
 	
+	void setSize(int nm){
+		if (nm > 5) {
+			size = nm;
+		}
+	}
+	
 	String bicara() {
 	return "Bahasa Kucing";
 	}
